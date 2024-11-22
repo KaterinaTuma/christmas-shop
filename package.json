@@ -1,0 +1,14 @@
+{
+  "name": "christmas-shop",
+  "version": "1.0.0",
+  "description": "• HTML   • CSS   • JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}

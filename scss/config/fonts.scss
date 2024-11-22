@@ -1,0 +1,18 @@
+/*fonts*/
+@include font_face('Montserrat',
+  '../assets/fonts/Montserrat',
+  'Montserrat-SemiRegular',
+  400,
+);
+
+@include font_face('Montserrat',
+  '../assets/fonts/Montserrat',
+  'Montserrat-SemiBold',
+  600,
+);
+
+@include font_face('Allura',
+  '../assets/fonts/Allura',
+  'Allura-Regular',
+  400,
+);
