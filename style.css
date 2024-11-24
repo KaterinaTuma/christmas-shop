@@ -42,8 +42,11 @@ input {
 }
 
 :root {
-  --page-color: #FF4646;
-  --page-bg: #FFFFFF;
+  --page-color: #ffffff;
+  --page-bg: ##FF4646;
+  --header-color: #181C29;
+  --header-bg: #ffffff;
+  --header-logo-color:#FF4646;
 }
 
 /*breakpoint*/
