@@ -1,0 +1,17 @@
+/* menu */
+.menu {
+  display: flex;
+  gap: 8px;
+
+  &__item {
+    padding: 12px 20px;
+    @include action-sm;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--hover-color);
+      background: var(--hover-bg);
+      border-radius: 12px;
+    }
+  }
+}

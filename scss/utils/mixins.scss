@@ -12,3 +12,12 @@
     font-display: swap;
   }
 }
+
+@mixin action-sm {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

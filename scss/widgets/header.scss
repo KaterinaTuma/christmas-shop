@@ -1,1 +1,32 @@
 /* header */
+.header {
+  color: var(--header-color);
+  background: var(--header-bg);
+
+  &__wrapper {
+    padding: 12px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 12px 82px;
+    }
+  }
+
+  &__logo {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include action-sm;
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+}
