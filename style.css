@@ -43,10 +43,13 @@ input {
 
 :root {
   --page-color: #ffffff;
-  --page-bg: ##FF4646;
+  --page-bg: #FF4646;
   --header-color: #181C29;
   --header-bg: #ffffff;
   --header-logo-color:#FF4646;
+  --burger-color: #181C29;
+  --hover-bg: rgba(255, 70, 70, 0.06);
+  --hover-color: #FF4646;
 }
 
 /*breakpoint*/
@@ -54,9 +57,9 @@ input {
 /*fonts*/
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/Montserrat-SemiRegular.woff2") format("woff2");
-  src: url("../assets/fonts/Montserrat/Montserrat-SemiRegular.woff") format("woff");
-  src: url("../assets/fonts/Montserrat/Montserrat-SemiRegular.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -81,7 +84,6 @@ input {
 }
 /*global*/
 body {
-  padding-top: 64px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: var(--page-color);
@@ -92,9 +94,82 @@ img {
   width: 100%;
 }
 
-/* nav */
-/* burder */
+button {
+  border: 1px dashed transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  gap: 8px;
+}
+.menu__item {
+  padding: 12px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.menu__item:hover {
+  color: var(--hover-color);
+  background: var(--hover-bg);
+  border-radius: 12px;
+}
+
+/*burger*/
+.burger {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+}
+
 /* header */
+.header {
+  color: var(--header-color);
+  background: var(--header-bg);
+}
+.header__wrapper {
+  padding: 12px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .header__wrapper {
+    padding: 12px 82px;
+  }
+}
+.header__logo {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header__nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  .header__nav {
+    display: block;
+  }
+}
+
 /* hero */
 /* about */
 /* slider */

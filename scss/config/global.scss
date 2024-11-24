@@ -1,6 +1,5 @@
 /*global*/
 body {
-  padding-top: 64px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: var(--page-color);
@@ -9,4 +8,11 @@ body {
 
 img {
   width: 100%;
+}
+
+button {
+  border: 1px dashed transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
